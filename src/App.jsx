@@ -1,9 +1,17 @@
+import Header from './components/Header';
+import AppRoutes from './routes/AppRoutes';
+
 function App() {
+
   return (
-    <div>
-      <h1 className="m-6">Hello React + Vite</h1>
-    </div>
+    <>
+      <Header />
+      <AppRoutes />
+    </>
+
   );
 }
 
 export default App;
+
+
