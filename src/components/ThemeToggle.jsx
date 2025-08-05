@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState("light");
@@ -22,12 +27,15 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
       className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-semibold  shadow transition duration-300"
     >
-      {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
-      <span class="fa-sharp fa-solid fa-user"></span>
-      <i class="fa-sharp fa-solid fa-user"></i>
-
-
-
+      {theme === "dark" ? (
+        <>
+          <FontAwesomeIcon icon={faSun} /> Light Mode
+        </>
+      ) : (
+        <>
+          <FontAwesomeIcon icon={faMoon} /> Dark Mode
+        </>
+      )}
     </button>
   );
 };
