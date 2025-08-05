@@ -1,4 +1,3 @@
-// src/pages/CountryDetailPage.jsx
 import { useParams, Link } from "react-router";
 import { useEffect, useState } from "react";
 import countriesData from "../data/data.json";

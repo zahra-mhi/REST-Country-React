@@ -1,11 +1,9 @@
-// import MainLayout from "../components/layouts/MainLayout";
 import CountryDetailPage from "../pages/CountryDetail";
 import Home from "../pages/Home";
 
 const routes = [
   {
     path: '/',
-    // element: <MainLayout />,
     children: [
       {
         path: '/',
@@ -15,8 +13,6 @@ const routes = [
         path: '/country/:alpha3Code',
         element: <CountryDetailPage />,
       },
-
-   
     ]
   },
 ];

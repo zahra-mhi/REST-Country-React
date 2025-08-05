@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
-
-
-
 const ThemeToggle = () => {
   const [theme, setTheme] = useState("light");
 
