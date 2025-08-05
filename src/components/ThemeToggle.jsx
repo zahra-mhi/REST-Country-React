@@ -23,6 +23,11 @@ const ThemeToggle = () => {
       className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-semibold  shadow transition duration-300"
     >
       {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      <span class="fa-sharp fa-solid fa-user"></span>
+      <i class="fa-sharp fa-solid fa-user"></i>
+
+
+
     </button>
   );
 };

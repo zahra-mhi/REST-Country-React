@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const CountryCard = ({ country }) => {
   return (
     <Link to={`/country/${country.alpha3Code}`}>
-      <div className="shadow-md rounded overflow-hidden transition hover:scale-105 duration-200">
+      <div className="card shadow-md rounded overflow-hidden transition hover:scale-105 duration-200">
         <img
           src={country.flags?.png}
           alt={`${country.name} flag`}
